@@ -1,0 +1,1258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.152" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainController">
+   <children>
+      <AnchorPane prefHeight="100.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;">
+         <children>
+            <Label layoutX="151.0" layoutY="24.0" text="Програма для автоматичного складання розкладу навчальних занять">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="themeLabel" layoutX="192.0" layoutY="57.0" text="Встановлення кількості пар для кожного предмету в кожній групі:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane prefHeight="400.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;">
+         <children>
+            <TabPane fx:id="tabPane" prefHeight="400.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+              <tabs>
+                <Tab fx:id="tab1" disable="true">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                           <children>
+                              <TableView fx:id="table1" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                <columns>
+                                  <TableColumn fx:id="pairNumberColumn1" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                  <TableColumn fx:id="mondayColumn1" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                    <TableColumn fx:id="tuesdayColumn1" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                    <TableColumn fx:id="wednesdayColumn1" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                    <TableColumn fx:id="thursdayColumn1" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                    <TableColumn fx:id="fridayColumn1" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab fx:id="tab2" disable="true">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                            <children>
+                                <TableView fx:id="table2" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                    <columns>
+                                        <TableColumn fx:id="pairNumberColumn2" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                        <TableColumn fx:id="mondayColumn2" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                        <TableColumn fx:id="tuesdayColumn2" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                        <TableColumn fx:id="wednesdayColumn2" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                        <TableColumn fx:id="thursdayColumn2" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                        <TableColumn fx:id="fridayColumn2" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                    </columns>
+                                </TableView>
+                            </children>
+                        </AnchorPane>                    </content>
+                  </Tab>
+                  <Tab fx:id="tab3" disable="true">
+                     <content>
+                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                             <children>
+                                 <TableView fx:id="table3" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                     <columns>
+                                         <TableColumn fx:id="pairNumberColumn3" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                         <TableColumn fx:id="mondayColumn3" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                         <TableColumn fx:id="tuesdayColumn3" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                         <TableColumn fx:id="wednesdayColumn3" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                         <TableColumn fx:id="thursdayColumn3" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                         <TableColumn fx:id="fridayColumn3" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                     </columns>
+                                 </TableView>
+                             </children>
+                         </AnchorPane>                     </content>
+                  </Tab>
+                  <Tab fx:id="tab4" disable="true">
+                     <content>
+                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                             <children>
+                                 <TableView fx:id="table4" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                     <columns>
+                                         <TableColumn fx:id="pairNumberColumn4" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                         <TableColumn fx:id="mondayColumn4" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                         <TableColumn fx:id="tuesdayColumn4" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                         <TableColumn fx:id="wednesdayColumn4" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                         <TableColumn fx:id="thursdayColumn4" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                         <TableColumn fx:id="fridayColumn4" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                     </columns>
+                                 </TableView>
+                             </children>
+                         </AnchorPane>                     </content>
+                  </Tab>
+                  <Tab fx:id="tab5" disable="true">
+                     <content>
+                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                             <children>
+                                 <TableView fx:id="table5" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                     <columns>
+                                         <TableColumn fx:id="pairNumberColumn5" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                         <TableColumn fx:id="mondayColumn5" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                         <TableColumn fx:id="tuesdayColumn5" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                         <TableColumn fx:id="wednesdayColumn5" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                         <TableColumn fx:id="thursdayColumn5" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                         <TableColumn fx:id="fridayColumn5" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                     </columns>
+                                 </TableView>
+                             </children>
+                         </AnchorPane>                     </content>
+                  </Tab>
+                  <Tab fx:id="tab6" disable="true">
+                     <content>
+                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                             <children>
+                                 <TableView fx:id="table6" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                     <columns>
+                                         <TableColumn fx:id="pairNumberColumn6" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                         <TableColumn fx:id="mondayColumn6" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                         <TableColumn fx:id="tuesdayColumn6" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                         <TableColumn fx:id="wednesdayColumn6" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                         <TableColumn fx:id="thursdayColumn6" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                         <TableColumn fx:id="fridayColumn6" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                     </columns>
+                                 </TableView>
+                             </children>
+                         </AnchorPane>                     </content>
+                  </Tab>
+                  <Tab fx:id="tab7" disable="true">
+                     <content>
+                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                             <children>
+                                 <TableView fx:id="table7" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                     <columns>
+                                         <TableColumn fx:id="pairNumberColumn7" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                         <TableColumn fx:id="mondayColumn7" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                         <TableColumn fx:id="tuesdayColumn7" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                         <TableColumn fx:id="wednesdayColumn7" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                         <TableColumn fx:id="thursdayColumn7" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                         <TableColumn fx:id="fridayColumn7" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                     </columns>
+                                 </TableView>
+                             </children>
+                         </AnchorPane>                     </content>
+                  </Tab>
+                  <Tab fx:id="tab8" disable="true">
+                     <content>
+                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                             <children>
+                                 <TableView fx:id="table8" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                     <columns>
+                                         <TableColumn fx:id="pairNumberColumn8" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                         <TableColumn fx:id="mondayColumn8" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                         <TableColumn fx:id="tuesdayColumn8" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                         <TableColumn fx:id="wednesdayColumn8" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                         <TableColumn fx:id="thursdayColumn8" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                         <TableColumn fx:id="fridayColumn8" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                     </columns>
+                                 </TableView>
+                             </children>
+                         </AnchorPane>                     </content>
+                  </Tab>
+                  <Tab fx:id="tab9" disable="true">
+                     <content>
+                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                             <children>
+                                 <TableView fx:id="table9" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                     <columns>
+                                         <TableColumn fx:id="pairNumberColumn9" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                         <TableColumn fx:id="mondayColumn9" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                         <TableColumn fx:id="tuesdayColumn9" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                         <TableColumn fx:id="wednesdayColumn9" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                         <TableColumn fx:id="thursdayColumn9" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                         <TableColumn fx:id="fridayColumn9" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                     </columns>
+                                 </TableView>
+                             </children>
+                         </AnchorPane>                     </content>
+                  </Tab>
+                  <Tab fx:id="tab10" disable="true">
+                     <content>
+                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                             <children>
+                                 <TableView fx:id="table10" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                     <columns>
+                                         <TableColumn fx:id="pairNumberColumn10" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                         <TableColumn fx:id="mondayColumn10" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                         <TableColumn fx:id="tuesdayColumn10" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                         <TableColumn fx:id="wednesdayColumn10" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                         <TableColumn fx:id="thursdayColumn10" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                         <TableColumn fx:id="fridayColumn10" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                     </columns>
+                                 </TableView>
+                             </children>
+                         </AnchorPane>                     </content>
+                  </Tab>
+                  <Tab fx:id="tab11" disable="true">
+                     <content>
+                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                             <children>
+                                 <TableView fx:id="table11" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                     <columns>
+                                         <TableColumn fx:id="pairNumberColumn11" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                         <TableColumn fx:id="mondayColumn11" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                         <TableColumn fx:id="tuesdayColumn11" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                         <TableColumn fx:id="wednesdayColumn11" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                         <TableColumn fx:id="thursdayColumn11" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                         <TableColumn fx:id="fridayColumn11" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                     </columns>
+                                 </TableView>
+                             </children>
+                         </AnchorPane>                     </content>
+                  </Tab>
+                  <Tab fx:id="tab12" disable="true">
+                     <content>
+                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                             <children>
+                                 <TableView fx:id="table12" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                     <columns>
+                                         <TableColumn fx:id="pairNumberColumn12" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                         <TableColumn fx:id="mondayColumn12" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                         <TableColumn fx:id="tuesdayColumn12" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                         <TableColumn fx:id="wednesdayColumn12" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                         <TableColumn fx:id="thursdayColumn12" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                         <TableColumn fx:id="fridayColumn12" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                     </columns>
+                                 </TableView>
+                             </children>
+                         </AnchorPane>                     </content>
+                  </Tab>
+                  <Tab fx:id="tab13" disable="true">
+                     <content>
+                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                             <children>
+                                 <TableView fx:id="table13" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                     <columns>
+                                         <TableColumn fx:id="pairNumberColumn13" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                         <TableColumn fx:id="mondayColumn13" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                         <TableColumn fx:id="tuesdayColumn13" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                         <TableColumn fx:id="wednesdayColumn13" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                         <TableColumn fx:id="thursdayColumn13" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                         <TableColumn fx:id="fridayColumn13" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                     </columns>
+                                 </TableView>
+                             </children>
+                         </AnchorPane>                     </content>
+                  </Tab>
+                  <Tab fx:id="tab14" disable="true">
+                     <content>
+                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                             <children>
+                                 <TableView fx:id="table14" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                     <columns>
+                                         <TableColumn fx:id="pairNumberColumn14" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                         <TableColumn fx:id="mondayColumn14" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                         <TableColumn fx:id="tuesdayColumn14" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                         <TableColumn fx:id="wednesdayColumn14" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                         <TableColumn fx:id="thursdayColumn14" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                         <TableColumn fx:id="fridayColumn14" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                     </columns>
+                                 </TableView>
+                             </children>
+                         </AnchorPane>                     </content>
+                  </Tab>
+                  <Tab fx:id="tab15" disable="true">
+                     <content>
+                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                             <children>
+                                 <TableView fx:id="table15" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                     <columns>
+                                         <TableColumn fx:id="pairNumberColumn15" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                         <TableColumn fx:id="mondayColumn15" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                         <TableColumn fx:id="tuesdayColumn15" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                         <TableColumn fx:id="wednesdayColumn15" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                         <TableColumn fx:id="thursdayColumn15" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                         <TableColumn fx:id="fridayColumn15" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                     </columns>
+                                 </TableView>
+                             </children>
+                         </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab disable="true">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                           <children>
+                              <TableView fx:id="table151" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="pairNumberColumn151" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                    <TableColumn fx:id="mondayColumn151" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                    <TableColumn fx:id="tuesdayColumn151" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                    <TableColumn fx:id="wednesdayColumn151" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                    <TableColumn fx:id="thursdayColumn151" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                    <TableColumn fx:id="fridayColumn151" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab disable="true">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                           <children>
+                              <TableView fx:id="table152" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="pairNumberColumn152" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                    <TableColumn fx:id="mondayColumn152" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                    <TableColumn fx:id="tuesdayColumn152" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                    <TableColumn fx:id="wednesdayColumn152" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                    <TableColumn fx:id="thursdayColumn152" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                    <TableColumn fx:id="fridayColumn152" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab disable="true">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                           <children>
+                              <TableView fx:id="table153" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="pairNumberColumn153" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                    <TableColumn fx:id="mondayColumn153" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                    <TableColumn fx:id="tuesdayColumn153" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                    <TableColumn fx:id="wednesdayColumn153" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                    <TableColumn fx:id="thursdayColumn153" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                    <TableColumn fx:id="fridayColumn153" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab disable="true">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                           <children>
+                              <TableView fx:id="table154" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="pairNumberColumn154" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                    <TableColumn fx:id="mondayColumn154" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                    <TableColumn fx:id="tuesdayColumn154" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                    <TableColumn fx:id="wednesdayColumn154" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                    <TableColumn fx:id="thursdayColumn154" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                    <TableColumn fx:id="fridayColumn154" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab disable="true">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                           <children>
+                              <TableView fx:id="table155" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="pairNumberColumn155" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                    <TableColumn fx:id="mondayColumn155" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                    <TableColumn fx:id="tuesdayColumn155" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                    <TableColumn fx:id="wednesdayColumn155" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                    <TableColumn fx:id="thursdayColumn155" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                    <TableColumn fx:id="fridayColumn155" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab disable="true">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                           <children>
+                              <TableView fx:id="table156" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="pairNumberColumn156" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                    <TableColumn fx:id="mondayColumn156" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                    <TableColumn fx:id="tuesdayColumn156" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                    <TableColumn fx:id="wednesdayColumn156" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                    <TableColumn fx:id="thursdayColumn156" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                    <TableColumn fx:id="fridayColumn156" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab disable="true">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                           <children>
+                              <TableView fx:id="table157" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="pairNumberColumn157" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                    <TableColumn fx:id="mondayColumn157" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                    <TableColumn fx:id="tuesdayColumn157" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                    <TableColumn fx:id="wednesdayColumn157" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                    <TableColumn fx:id="thursdayColumn157" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                    <TableColumn fx:id="fridayColumn157" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab disable="true">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                           <children>
+                              <TableView fx:id="table158" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="pairNumberColumn158" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                    <TableColumn fx:id="mondayColumn158" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                    <TableColumn fx:id="tuesdayColumn158" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                    <TableColumn fx:id="wednesdayColumn158" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                    <TableColumn fx:id="thursdayColumn158" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                    <TableColumn fx:id="fridayColumn158" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab disable="true">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                           <children>
+                              <TableView fx:id="table159" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="pairNumberColumn159" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                    <TableColumn fx:id="mondayColumn159" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                    <TableColumn fx:id="tuesdayColumn159" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                    <TableColumn fx:id="wednesdayColumn159" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                    <TableColumn fx:id="thursdayColumn159" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                    <TableColumn fx:id="fridayColumn159" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab disable="true">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                           <children>
+                              <TableView fx:id="table1510" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="pairNumberColumn1510" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                    <TableColumn fx:id="mondayColumn1510" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                    <TableColumn fx:id="tuesdayColumn1510" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                    <TableColumn fx:id="wednesdayColumn1510" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                    <TableColumn fx:id="thursdayColumn1510" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                    <TableColumn fx:id="fridayColumn1510" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab disable="true">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                           <children>
+                              <TableView fx:id="table1511" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="pairNumberColumn1511" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                    <TableColumn fx:id="mondayColumn1511" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                    <TableColumn fx:id="tuesdayColumn1511" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                    <TableColumn fx:id="wednesdayColumn1511" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                    <TableColumn fx:id="thursdayColumn1511" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                    <TableColumn fx:id="fridayColumn1511" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab disable="true">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                           <children>
+                              <TableView fx:id="table1512" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="pairNumberColumn1512" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                    <TableColumn fx:id="mondayColumn1512" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                    <TableColumn fx:id="tuesdayColumn1512" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                    <TableColumn fx:id="wednesdayColumn1512" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                    <TableColumn fx:id="thursdayColumn1512" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                    <TableColumn fx:id="fridayColumn1512" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab disable="true">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                           <children>
+                              <TableView fx:id="table1513" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="pairNumberColumn1513" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                    <TableColumn fx:id="mondayColumn1513" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                    <TableColumn fx:id="tuesdayColumn1513" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                    <TableColumn fx:id="wednesdayColumn1513" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                    <TableColumn fx:id="thursdayColumn1513" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                    <TableColumn fx:id="fridayColumn1513" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab disable="true">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                           <children>
+                              <TableView fx:id="table1514" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="pairNumberColumn1514" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                    <TableColumn fx:id="mondayColumn1514" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                    <TableColumn fx:id="tuesdayColumn1514" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                    <TableColumn fx:id="wednesdayColumn1514" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                    <TableColumn fx:id="thursdayColumn1514" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                    <TableColumn fx:id="fridayColumn1514" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab disable="true">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                           <children>
+                              <TableView fx:id="table1515" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="pairNumberColumn1515" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                    <TableColumn fx:id="mondayColumn1515" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                    <TableColumn fx:id="tuesdayColumn1515" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                    <TableColumn fx:id="wednesdayColumn1515" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                    <TableColumn fx:id="thursdayColumn1515" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                    <TableColumn fx:id="fridayColumn1515" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab disable="true">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                           <children>
+                              <TableView fx:id="table1516" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="pairNumberColumn1516" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                    <TableColumn fx:id="mondayColumn1516" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                    <TableColumn fx:id="tuesdayColumn1516" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                    <TableColumn fx:id="wednesdayColumn1516" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                    <TableColumn fx:id="thursdayColumn1516" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                    <TableColumn fx:id="fridayColumn1516" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab disable="true">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                           <children>
+                              <TableView fx:id="table1517" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="pairNumberColumn1517" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                    <TableColumn fx:id="mondayColumn1517" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                    <TableColumn fx:id="tuesdayColumn1517" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                    <TableColumn fx:id="wednesdayColumn1517" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                    <TableColumn fx:id="thursdayColumn1517" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                    <TableColumn fx:id="fridayColumn1517" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab disable="true">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                           <children>
+                              <TableView fx:id="table1518" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="pairNumberColumn1518" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                    <TableColumn fx:id="mondayColumn1518" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                    <TableColumn fx:id="tuesdayColumn1518" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                    <TableColumn fx:id="wednesdayColumn1518" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                    <TableColumn fx:id="thursdayColumn1518" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                    <TableColumn fx:id="fridayColumn1518" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab disable="true">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                           <children>
+                              <TableView fx:id="table1519" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="pairNumberColumn1519" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                    <TableColumn fx:id="mondayColumn1519" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                    <TableColumn fx:id="tuesdayColumn1519" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                    <TableColumn fx:id="wednesdayColumn1519" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                    <TableColumn fx:id="thursdayColumn1519" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                    <TableColumn fx:id="fridayColumn1519" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab disable="true">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                           <children>
+                              <TableView fx:id="table1520" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="pairNumberColumn1520" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                    <TableColumn fx:id="mondayColumn1520" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                    <TableColumn fx:id="tuesdayColumn1520" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                    <TableColumn fx:id="wednesdayColumn1520" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                    <TableColumn fx:id="thursdayColumn1520" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                    <TableColumn fx:id="fridayColumn1520" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab disable="true">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                           <children>
+                              <TableView fx:id="table1521" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="pairNumberColumn1521" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                    <TableColumn fx:id="mondayColumn1521" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                    <TableColumn fx:id="tuesdayColumn1521" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                    <TableColumn fx:id="wednesdayColumn1521" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                    <TableColumn fx:id="thursdayColumn1521" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                    <TableColumn fx:id="fridayColumn1521" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab disable="true">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                           <children>
+                              <TableView fx:id="table1522" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="pairNumberColumn1522" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                    <TableColumn fx:id="mondayColumn1522" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                    <TableColumn fx:id="tuesdayColumn1522" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                    <TableColumn fx:id="wednesdayColumn1522" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                    <TableColumn fx:id="thursdayColumn1522" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                    <TableColumn fx:id="fridayColumn1522" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab disable="true">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                           <children>
+                              <TableView fx:id="table1523" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="pairNumberColumn1523" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                    <TableColumn fx:id="mondayColumn1523" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                    <TableColumn fx:id="tuesdayColumn1523" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                    <TableColumn fx:id="wednesdayColumn1523" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                    <TableColumn fx:id="thursdayColumn1523" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                    <TableColumn fx:id="fridayColumn1523" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab disable="true">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                           <children>
+                              <TableView fx:id="table1524" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="pairNumberColumn1524" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                    <TableColumn fx:id="mondayColumn1524" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                    <TableColumn fx:id="tuesdayColumn1524" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                    <TableColumn fx:id="wednesdayColumn1524" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                    <TableColumn fx:id="thursdayColumn1524" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                    <TableColumn fx:id="fridayColumn1524" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab disable="true">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                           <children>
+                              <TableView fx:id="table1525" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="pairNumberColumn1525" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                    <TableColumn fx:id="mondayColumn1525" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                    <TableColumn fx:id="tuesdayColumn1525" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                    <TableColumn fx:id="wednesdayColumn1525" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                    <TableColumn fx:id="thursdayColumn1525" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                    <TableColumn fx:id="fridayColumn1525" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab disable="true">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                           <children>
+                              <TableView fx:id="table1526" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="pairNumberColumn1526" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                    <TableColumn fx:id="mondayColumn1526" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                    <TableColumn fx:id="tuesdayColumn1526" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                    <TableColumn fx:id="wednesdayColumn1526" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                    <TableColumn fx:id="thursdayColumn1526" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                    <TableColumn fx:id="fridayColumn1526" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab disable="true">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                           <children>
+                              <TableView fx:id="table1527" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="pairNumberColumn1527" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                    <TableColumn fx:id="mondayColumn1527" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                    <TableColumn fx:id="tuesdayColumn1527" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                    <TableColumn fx:id="wednesdayColumn1527" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                    <TableColumn fx:id="thursdayColumn1527" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                    <TableColumn fx:id="fridayColumn1527" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab disable="true">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                           <children>
+                              <TableView fx:id="table1528" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="pairNumberColumn1528" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                    <TableColumn fx:id="mondayColumn1528" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                    <TableColumn fx:id="tuesdayColumn1528" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                    <TableColumn fx:id="wednesdayColumn1528" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                    <TableColumn fx:id="thursdayColumn1528" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                    <TableColumn fx:id="fridayColumn1528" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab disable="true">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                           <children>
+                              <TableView fx:id="table1529" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="pairNumberColumn1529" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                    <TableColumn fx:id="mondayColumn1529" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                    <TableColumn fx:id="tuesdayColumn1529" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                    <TableColumn fx:id="wednesdayColumn1529" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                    <TableColumn fx:id="thursdayColumn1529" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                    <TableColumn fx:id="fridayColumn1529" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab disable="true">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                           <children>
+                              <TableView fx:id="table1530" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="pairNumberColumn1530" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                    <TableColumn fx:id="mondayColumn1530" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                    <TableColumn fx:id="tuesdayColumn1530" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                    <TableColumn fx:id="wednesdayColumn1530" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                    <TableColumn fx:id="thursdayColumn1530" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                    <TableColumn fx:id="fridayColumn1530" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab disable="true">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                           <children>
+                              <TableView fx:id="table1531" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="pairNumberColumn1531" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                    <TableColumn fx:id="mondayColumn1531" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                    <TableColumn fx:id="tuesdayColumn1531" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                    <TableColumn fx:id="wednesdayColumn1531" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                    <TableColumn fx:id="thursdayColumn1531" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                    <TableColumn fx:id="fridayColumn1531" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab disable="true">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                           <children>
+                              <TableView fx:id="table1532" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="pairNumberColumn1532" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                    <TableColumn fx:id="mondayColumn1532" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                    <TableColumn fx:id="tuesdayColumn1532" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                    <TableColumn fx:id="wednesdayColumn1532" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                    <TableColumn fx:id="thursdayColumn1532" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                    <TableColumn fx:id="fridayColumn1532" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab disable="true">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                           <children>
+                              <TableView fx:id="table1533" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="pairNumberColumn1533" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                    <TableColumn fx:id="mondayColumn1533" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                    <TableColumn fx:id="tuesdayColumn1533" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                    <TableColumn fx:id="wednesdayColumn1533" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                    <TableColumn fx:id="thursdayColumn1533" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                    <TableColumn fx:id="fridayColumn1533" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab disable="true">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                           <children>
+                              <TableView fx:id="table1534" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="pairNumberColumn1534" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                    <TableColumn fx:id="mondayColumn1534" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                    <TableColumn fx:id="tuesdayColumn1534" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                    <TableColumn fx:id="wednesdayColumn1534" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                    <TableColumn fx:id="thursdayColumn1534" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                    <TableColumn fx:id="fridayColumn1534" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab disable="true">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                           <children>
+                              <TableView fx:id="table1535" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="pairNumberColumn1535" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                    <TableColumn fx:id="mondayColumn1535" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                    <TableColumn fx:id="tuesdayColumn1535" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                    <TableColumn fx:id="wednesdayColumn1535" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                    <TableColumn fx:id="thursdayColumn1535" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                    <TableColumn fx:id="fridayColumn1535" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab disable="true">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                           <children>
+                              <TableView fx:id="table1536" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="pairNumberColumn1536" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                    <TableColumn fx:id="mondayColumn1536" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                    <TableColumn fx:id="tuesdayColumn1536" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                    <TableColumn fx:id="wednesdayColumn1536" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                    <TableColumn fx:id="thursdayColumn1536" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                    <TableColumn fx:id="fridayColumn1536" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab disable="true">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                           <children>
+                              <TableView fx:id="table1537" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="pairNumberColumn1537" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                    <TableColumn fx:id="mondayColumn1537" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                    <TableColumn fx:id="tuesdayColumn1537" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                    <TableColumn fx:id="wednesdayColumn1537" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                    <TableColumn fx:id="thursdayColumn1537" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                    <TableColumn fx:id="fridayColumn1537" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab disable="true">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                           <children>
+                              <TableView fx:id="table1538" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="pairNumberColumn1538" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                    <TableColumn fx:id="mondayColumn1538" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                    <TableColumn fx:id="tuesdayColumn1538" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                    <TableColumn fx:id="wednesdayColumn1538" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                    <TableColumn fx:id="thursdayColumn1538" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                    <TableColumn fx:id="fridayColumn1538" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab disable="true">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                           <children>
+                              <TableView fx:id="table1539" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="pairNumberColumn1539" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                    <TableColumn fx:id="mondayColumn1539" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                    <TableColumn fx:id="tuesdayColumn1539" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                    <TableColumn fx:id="wednesdayColumn1539" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                    <TableColumn fx:id="thursdayColumn1539" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                    <TableColumn fx:id="fridayColumn1539" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab disable="true">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                           <children>
+                              <TableView fx:id="table1540" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="pairNumberColumn1540" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                    <TableColumn fx:id="mondayColumn1540" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                    <TableColumn fx:id="tuesdayColumn1540" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                    <TableColumn fx:id="wednesdayColumn1540" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                    <TableColumn fx:id="thursdayColumn1540" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                    <TableColumn fx:id="fridayColumn1540" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab disable="true">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                           <children>
+                              <TableView fx:id="table1541" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="pairNumberColumn1541" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                    <TableColumn fx:id="mondayColumn1541" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                    <TableColumn fx:id="tuesdayColumn1541" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                    <TableColumn fx:id="wednesdayColumn1541" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                    <TableColumn fx:id="thursdayColumn1541" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                    <TableColumn fx:id="fridayColumn1541" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab disable="true">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                           <children>
+                              <TableView fx:id="table1542" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="pairNumberColumn1542" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                    <TableColumn fx:id="mondayColumn1542" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                    <TableColumn fx:id="tuesdayColumn1542" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                    <TableColumn fx:id="wednesdayColumn1542" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                    <TableColumn fx:id="thursdayColumn1542" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                    <TableColumn fx:id="fridayColumn1542" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab disable="true">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                           <children>
+                              <TableView fx:id="table1543" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="pairNumberColumn1543" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                    <TableColumn fx:id="mondayColumn1543" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                    <TableColumn fx:id="tuesdayColumn1543" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                    <TableColumn fx:id="wednesdayColumn1543" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                    <TableColumn fx:id="thursdayColumn1543" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                    <TableColumn fx:id="fridayColumn1543" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab disable="true">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                           <children>
+                              <TableView fx:id="table1544" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="pairNumberColumn1544" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                    <TableColumn fx:id="mondayColumn1544" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                    <TableColumn fx:id="tuesdayColumn1544" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                    <TableColumn fx:id="wednesdayColumn1544" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                    <TableColumn fx:id="thursdayColumn1544" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                    <TableColumn fx:id="fridayColumn1544" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab disable="true">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                           <children>
+                              <TableView fx:id="table1545" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="pairNumberColumn1545" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                    <TableColumn fx:id="mondayColumn1545" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                    <TableColumn fx:id="tuesdayColumn1545" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                    <TableColumn fx:id="wednesdayColumn1545" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                    <TableColumn fx:id="thursdayColumn1545" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                    <TableColumn fx:id="fridayColumn1545" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab disable="true">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                           <children>
+                              <TableView fx:id="table1546" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="pairNumberColumn1546" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                    <TableColumn fx:id="mondayColumn1546" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                    <TableColumn fx:id="tuesdayColumn1546" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                    <TableColumn fx:id="wednesdayColumn1546" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                    <TableColumn fx:id="thursdayColumn1546" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                    <TableColumn fx:id="fridayColumn1546" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab disable="true">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="281.0">
+                           <children>
+                              <TableView fx:id="table1547" prefHeight="371.0" prefWidth="800.0" style="-fx-background-color: #f2f2f2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="pairNumberColumn1547" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="№ Пари" />
+                                    <TableColumn fx:id="mondayColumn1547" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Понеділок" />
+                                    <TableColumn fx:id="tuesdayColumn1547" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Вівторок" />
+                                    <TableColumn fx:id="wednesdayColumn1547" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Середа" />
+                                    <TableColumn fx:id="thursdayColumn1547" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="Четвер" />
+                                    <TableColumn fx:id="fridayColumn1547" editable="false" prefWidth="145.0" resizable="false" sortable="false" text="П'ятниця" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+            <SplitPane fx:id="splitPane" dividerPositions="0.2064439140811456">
+              <items>
+                <AnchorPane maxHeight="400.0" maxWidth="170.0" minHeight="400.0" minWidth="170.0" prefHeight="400.0" prefWidth="170.0" style="-fx-background-color: #f2f2f2;">
+                     <children>
+                        <Label layoutX="5.0" layoutY="14.0" prefHeight="46.0" prefWidth="163.0" text="Встановіть кількіст пар для днів тижня:" textAlignment="CENTER" wrapText="true" />
+                        <Separator layoutX="15.0" layoutY="67.0" prefHeight="0.0" prefWidth="145.0" />
+                        <HBox layoutX="22.0" layoutY="68.0" prefHeight="185.0" prefWidth="130.0">
+                           <children>
+                              <VBox alignment="TOP_CENTER" prefHeight="185.0" prefWidth="122.0">
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="75.0" text="Понеділок">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label text="Вівторок">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label text="Середа">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label text="Четвер">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label text="П'ятниця">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox alignment="TOP_CENTER" fillWidth="false" prefHeight="245.0" prefWidth="87.0">
+                                 <children>
+                                    <TextField fx:id="mondayField" alignment="CENTER" maxHeight="20.0" minHeight="20.0" prefHeight="20.0" prefWidth="50.0">
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <TextField fx:id="tuesdayField" alignment="CENTER" maxHeight="20.0" minHeight="20.0" prefHeight="20.0" prefWidth="50.0">
+                                       <VBox.margin>
+                                          <Insets top="17.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <TextField fx:id="wednesdayField" alignment="CENTER" maxHeight="20.0" minHeight="20.0" prefHeight="20.0" prefWidth="50.0">
+                                       <VBox.margin>
+                                          <Insets top="17.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <TextField fx:id="thursdayField" alignment="CENTER" maxHeight="20.0" minHeight="20.0" prefHeight="20.0" prefWidth="50.0">
+                                       <VBox.margin>
+                                          <Insets top="17.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <TextField fx:id="fridayField" alignment="CENTER" maxHeight="20.0" minHeight="20.0" prefHeight="20.0" prefWidth="50.0">
+                                       <VBox.margin>
+                                          <Insets top="17.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <Button fx:id="resultButton" layoutX="24.0" layoutY="340.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="137.0" text="Сформувати розклад" wrapText="true" />
+                        <Button fx:id="setDefaultButton" layoutX="24.0" layoutY="271.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="137.0" text="Встановити за замовчуванням" textAlignment="CENTER" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+                <AnchorPane style="-fx-background-color: #f2f2f2;">
+                     <children>
+                        <TableView fx:id="preparingTable" style="-fx-background-color: #f2f2f2;">
+                          <columns>
+                            <TableColumn fx:id="subjectColumn" editable="false" prefWidth="167.0" resizable="false" text="Предмет" />
+                              <TableColumn fx:id="teacherColumn" editable="false" prefWidth="134.0" resizable="false" text="Викладач" />
+                              <TableColumn fx:id="auditoriumColumn" editable="false" prefWidth="117.0" resizable="false" text="Аудиторії" />
+                            <TableColumn fx:id="groupColumn" editable="false" minWidth="0.0" prefWidth="85.0" resizable="false" text="Група" />
+                              <TableColumn fx:id="amountOfPairsColumn" minWidth="0.0" prefWidth="127.0" resizable="false" text="К-cть пар/тиждень" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+            <AnchorPane fx:id="loadingPane" prefHeight="402.0" prefWidth="810.0" style="-fx-background-color: #f2f2f2;" visible="false">
+               <children>
+                  <Label fx:id="loadingTextLabel" layoutX="97.0" layoutY="162.0" text="Зачекайте, будь-ласка, програма формує розклад" textAlignment="CENTER">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="714.0" layoutY="146.0" text=".">
+                     <font>
+                        <Font size="49.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="725.0" layoutY="146.0" text=".">
+                     <font>
+                        <Font size="49.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="736.0" layoutY="146.0" text=".">
+                     <font>
+                        <Font size="49.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+   </children>
+</VBox>

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="NeuroScheduler:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/NeuroScheduler_jar</output-path>
+    <root id="archive" name="NeuroScheduler.jar">
+      <element id="module-output" name="NeuroScheduler" />
+    </root>
+  </artifact>
+</component>
